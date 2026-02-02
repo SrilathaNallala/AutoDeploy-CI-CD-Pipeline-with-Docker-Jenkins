@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/SrilathaNallala/AutoDeploy-CI-CD-Pipeline-with-Docker-Jenkins'
-            }
-        }
+        
 
         stage('Build Docker Image') {
             steps {
